@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Abi Subedi</title>
+        <link rel="stylesheet" href="style.css">
+      <script src="jquery-3.1.1.min.js"></script>
+
+
+    </head>
+
+                     <script>
+                        $(document).ready(function() {
+                          var scrollLink = $('.scroll');
+                          scrollLink.click(function(e) {
+                            $('body,html').animate ({
+                              scrollTop: $(this.hash).offset().top
+                            });
+                          });
+                        });
+                      </script>
+
+    <body>
+        <header>
+            <img src="profile-img.JPG" class="profile-img">
+
+
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+
+
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <div class="section-inner">
+                    <img src="profile-img.JPG" class="profile-img">
+
+
+                    <h1>Hello there</h1>
+                </div>
+            </section>
+            <section id="about">
+                <div class="section-inner">
+                    <h2>About me</h2>
+                    <p> My name is Abi Subedi. I was born in Bhutan and lived in Nepal and India for about fifteen years before coming to the States.
+                      I am an Information Technology major and a senior in college.I live in the South Hills with my wife and two children.
+                      I mostly worked in non-profit orginazations since 2008. Outside of school I love rading, skiing, photography and cooking.
+                  </p>
+                    <h3>Courses that I am currently enrolled </h3>
+                    <table style="width:90%">
+                      <tr>
+                        <th>Course Name</th>
+                        <th>Course Code</th>
+
+                      </tr>
+                      <tr>
+                        <td>Advanced Programming</td>
+                        <td>CMPS 262</td>
+
+                      </tr>
+                      <tr>
+                        <td>Advanced Networking</td>
+                        <td>CMPS 362</td>
+
+                      </tr>
+                      <tr>
+                        <td>Senior Project</td>
+                        <td>CMPS 480</td>
+
+                      </tr>
+                      <tr>
+                        <td>Corporate Finance</td>
+                        <td>BMGT 300</td>
+
+                      </tr>
+                    </table>
+
+                    <script>
+                    $(document).ready(function(){
+                    $("#hide").click(function(){
+                    $("table").hide();
+
+                    });
+                    $("#show").click(function(){
+                      $("table").show();
+                    });
+                    });
+
+                    </script>
+
+                    <button id="hide">Hide Courses</button>
+                   <button id="show">Show Courses</button>
+
+                   <style>
+            button {
+            text-align: center;
+           background-color: #00ff00;
+            border: solid 1px red;
+                }
+           </style>
+
+
+
+                </div>
+            </section>
+            <section id="contact">
+                <div class="section-inner">
+                    <h2>My Contact Information</h2>
+                    <p>I can be reached on these social networks</p>
+                    <ul>
+                        <li><a href="https://twitter.com/subediabi">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/subediabi/">Instagram</a></li>
+                    </ul>
+                    <p>Or, you can send me an email at <a href="mailto:subediabi@gmail.com">Abi Subedi</a>.</p>
+                </div>
+            </section>
+
+
+        </main>
+        <footer>
+            © Abi Subedi, 2019.
+        </footer>
+    </body>
+</html>
